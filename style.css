@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Rajdhani:wght@300&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0;
+}
+:root{
+
+    --cor-black: #000000;
+    --cor-purple: #402151;
+    --cor-white: #ffffff;
+    --cor-purpleTwo:#0b0213;
+    --fonte: 'Rajdhani';
+}
+body{
+
+box-sizing: border-box;
+background-color:var(--cor-black);
+color: var(--cor-white);
+
+}
+
+.pai{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5.9rem 16.9rem;
+
+}
+.foto{
+    position: relative;
+    border-radius: 50%;
+    height: 42.6rem;
+}
+.pai__conteudo{
+
+    width:150%;
+    gap: 40px;
+   
+}
+.pai__cont__h1{
+    display: flex;
+    font-size: 4.4rem;
+    font-family:var(--fonte);
+    justify-content: left;
+    margin-left: 3.1rem;
+
+}
+.pai__cont__h3{
+
+    display: flex;
+    justify-content: left;
+    margin-left: 3.1rem;
+    font-size: 1.3rem;
+    font-family: var(--fonte);
+    margin-top: 0.3rem;
+
+}
+.button.houver{    
+    background-color: var(--cor-purple); 
+    color: var(--cor-white);
+}
+.button{
+
+    display: block;
+    justify-content: space-between;
+}
+ 
+.buttonProj{
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
+    border:0.1rem solid var(--cor-purple);
+    width: 23.6rem;
+    text-align: center;
+    border-radius:0.5rem;
+    font-size: 1.5rem;
+    font-weight:37,5rem;
+    padding:1.1rem 3.75rem;
+    margin-top: 1.25rem;
+    text-decoration: none;
+    color: var(--cor-white);
+    font-family:var(--fonte);
+}
+.buttonProj:hover{
+    background-color:var(--cor-purpleTwo);
+}
+.icons{
+    width:1.9rem;
+    height:1.9rem;
+    justify-content:center;
+}
+.cabecalho{
+
+    display: flex;
+    justify-content: right;
+    margin-right:5.6rem;
+    margin-top:3.1rem;
+    text-decoration: none;
+    font-size:5.6rem;
+    color: var(--cor-white);
+    font-size: var(--fonte);
+}
+.rodape{
+    font-family:var(--fonte);
+    text-align: center;
+    padding:1.5rem;
+    background-color:var(--cor-purple);
+    color: var(--cor-white);
+}
+.texto{
+
+    display: flex;
+    justify-content: left;
+    margin-left:3.1rem;
+    color: var(--cor-white);
+    font-size:1.3rem;
+    margin-top:1.3rem;
+}
+@media (max-width: 1200px){
+    .pai{
+        flex-direction: column-reverse;
+        width:auto;
+       
+    }
+    .pai__conteudo{
+        margin-top:10%;
+        width:auto;
+    }
+    .rodape{
+        width:auto;
+    }
+}
